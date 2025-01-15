@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live COVID Dashboard</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <header>
+    <h1>Live COVID Dashboard</h1>
+    <p>Real-time COVID-19 Global Statistics</p>
+  </header>
+  
+  <div class="container">
+    <h2>Global Statistics</h2>
+    <div id="stats" class="stats">
+      <div class="card" id="cases">
+        <h2>--</h2>
+        <p>Total Cases</p>
+      </div>
+      <div class="card" id="deaths">
+        <h2>--</h2>
+        <p>Total Deaths</p>
+      </div>
+      <div class="card" id="recovered">
+        <h2>--</h2>
+        <p>Total Recovered</p>
+      </div>
+    </div>
+  </div>
+<footer>Covid Based Charts</footer>
+
+  <div class="charts">
+    <canvas id="covidChart" width="1000" height="300"></canvas>
+    <canvas id="myChart" width="500" height="100"></canvas>
+    
+  </div>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
